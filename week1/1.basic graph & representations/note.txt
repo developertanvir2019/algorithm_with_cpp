@@ -1,6 +1,6 @@
 
 
 
-1.If we need and edge is available or not we will use matrics. like [1,4] is available?
+1.If we need to know any point edge is available or not we will use matrics. like [1,4] is available?
 2.If we need to know how many node connected with any node then we should use list
 3. When we need to get all edge we will use edge
