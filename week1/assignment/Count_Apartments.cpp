@@ -6,8 +6,8 @@ bool vis[1001][1001];
 
 int n, m;
 
-int dx[4] = {-1, 0, 1, 0}; // row er move
-int dy[4] = {0, 1, 0, -1}; // col er move
+int dx[4] = {-1, 0, 1, 0};
+int dy[4] = {0, 1, 0, -1}; 
 
 bool valid(int x, int y)
 {
@@ -22,8 +22,8 @@ void dfs(int si, int sj)
     for (int i = 0; i < 4; i++)
     {
 
-        int ci = si + dx[i]; // children er row
-        int cj = sj + dy[i]; // children er column
+        int ci = si + dx[i]; 
+        int cj = sj + dy[i]; 
 
         if (valid(ci, cj) && vis[ci][cj] == false)
         {
