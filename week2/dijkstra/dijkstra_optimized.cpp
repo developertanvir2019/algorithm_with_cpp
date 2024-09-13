@@ -3,7 +3,6 @@ using namespace std;
 const int N=100;
 vector<pair<int,int>> v[N];
 int dis[N];
-
 class cmp{
     public:
     bool operator()(pair<int,int>a,pair<int,int>b){
@@ -40,12 +39,9 @@ int main (){
         v[b].push_back({a,c});
 
     }
-    // memset(dis,INT_MAX,sizeof(dis));
-// memset alternative
 for(int i=0;i<n;i++){
     dis[i]=INT_MAX;
 }
-
     dijkstra(0);
     return 0;
 }
