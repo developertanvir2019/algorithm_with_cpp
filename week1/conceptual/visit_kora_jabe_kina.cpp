@@ -70,7 +70,7 @@ void bfs(int si, int sj)
     }
 }
 
-int main()
+int main() 
 {
 
     cin >> n >> m;

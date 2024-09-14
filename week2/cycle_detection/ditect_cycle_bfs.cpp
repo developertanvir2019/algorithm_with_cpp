@@ -13,9 +13,9 @@ void bfs(int s){
         int parent=q.front();
         q.pop();
         for(int child:adj[parent]){
-if(vis[child] && parArray[parent]!=child){
-ans=true;
-}
+                if(vis[child] && parArray[parent]!=child){
+                     ans=true;
+            }
             if(!vis[child]){
                 vis[child]=true;
                 parArray[child]=parent;
