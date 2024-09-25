@@ -6,7 +6,7 @@ int parent[N];
 int group_size[N];
 void dsu_initialize(int n){
      for(int i=0;i<n;i++){
-        parent[i]=-1;
+        parent[i]=-1; 
         group_size[i]=1;
      }
 }
