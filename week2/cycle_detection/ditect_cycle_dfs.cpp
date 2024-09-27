@@ -9,7 +9,7 @@ void dfs(int parent){
     vis[parent]=true;
     for(int child:adj[parent]){
 
-        if(vis[child] &&child!=parArray[parent]){
+        if(vis[child] &&child!=parArray[parent]){ 
         ans =true;
         }
         if(!vis[child]){
