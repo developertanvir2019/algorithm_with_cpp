@@ -11,9 +11,9 @@ int main (){
         s+=a[i];
     }
     bool dp[n+1][s+1]; 
-    dp[0][0]=false;
+    dp[0][0]=true;
     for(int i=1;i<=s;i++){
-        dp[0][i]=true;
+        dp[0][i]=false;
     }
     for(int i=1;i<=n;i++){
         for(int j=0;j<=s;j++){
@@ -27,7 +27,7 @@ int main (){
 vector<int>v;
     for(int i=0;i<=n;i++){
         for(int j=0;j<=s;j++){
-            if(dp[i][j]==1)v.push_back(j);
+            if(dp[n][j])v.push_back(j);
         }
         cout<<endl;
     }
