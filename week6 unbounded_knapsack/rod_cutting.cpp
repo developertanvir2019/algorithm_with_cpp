@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 int dp[1005][1005];
 int unbounded_knapsack(int n,int s,int val[],int w[]){
    if(n==0 ||s==0)return 0;
@@ -14,21 +15,18 @@ int unbounded_knapsack(int n,int s,int val[],int w[]){
     }
 }
 int main (){
-    int n,s;
-    cin>>n>>s;
-    int val[n],weight[n];
-
+    int n;
+    cin>>n;
+    int val[n],w[n];
     for(int i=0;i<=n;i++){
-        for(int j=0;i<=s;j++){
+        for(int j=0;j<=n;j++){
             dp[i][j]=-1;
         }
     }
     for(int i=0;i<n;i++){
         cin>>val[i];
+        w[i]=i+1;
     }
-    for(int i=0;i<n;i++){
-        cin>>weight[i];
-    }
-    cout<<unbounded_knapsack(n,s,val,weight);
+    cout<<unbounded_knapsack(n,n,val,w)<<endl;
     return 0;
 }
